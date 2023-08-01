@@ -73,7 +73,6 @@ header h1 {
   font-weight: bold;
   color: #FFF;
   padding-top: 70px;
-  ;
   padding-bottom: 35px;
 
 }
@@ -207,6 +206,10 @@ header h1 {
 
 }
 
+#h2Mobile{
+  display: none;
+}
+
 .apoiadores figure img {
   display: block;
   width: 172px;
@@ -221,6 +224,10 @@ footer {
   padding-left: 97px;
 }
 
+.mobile{
+  display: none;
+}
+
 footer h2 {
   font-size: 24px;
   color: #FFFFFF;
@@ -233,3 +240,220 @@ footer a {
   opacity: 1;
   text-decoration: none;
 }
+
+.sectionContainer {
+  margin-left: 5rem;
+  padding: 1rem;
+  
+}
+.sectionContainer ul{
+  padding-top: 2rem;
+}
+
+.sectionContainer li{
+  font-size: 14px;
+  padding: 0.5em;
+}
+
+
+/*Responsividade*/
+
+@media screen and (max-width: 768px){
+
+  header{
+    justify-content: space-around;
+  }
+
+  .header1{
+    align-items: left;
+  }
+
+  .contacts{
+    display: none;
+  }
+
+  #whats{
+    margin-left: 2rem;
+  }
+
+
+  .one{
+    background-image:url('./assets/chapeu.png');
+    background-size: cover;
+  }
+
+  .one h1{
+    font-size: 30px;
+  }
+
+  .one img{
+    width: 35%;
+    padding-top: 3rem;
+
+  }
+
+  .two{
+    background-image: url('./assets/leao.png');
+    justify-content: center;
+    
+  }
+
+  .two div{
+    margin: 0;
+    justify-content:flex-start;
+  }
+
+  .two h1{
+    font-size: 30px;
+    padding-top: 4rem;
+    padding-left: 2rem;
+    justify-content:flex-start;
+  }
+
+  .two p{
+    font-size: 17px;
+    width: 295px;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    
+  }
+
+  .two button {
+    width: 200px;
+    height: 90px;
+   justify-content: flex-start;
+    align-items: center;
+    font-size: 27px;
+    font-weight: bold;
+    margin-left:2rem;
+   
+  }
+
+
+  .three{
+
+    background-image: url("./assets/cao.png");
+  }
+
+  .three div {
+    margin-top: 2rem;
+    margin-left: 1rem;
+  }
+  
+  .three h1 {
+    font-size: 25px;
+    
+  
+  }
+  
+  .three p {
+    font-size: 17px;
+    padding-top:2rem;
+    width: 224px;
+   
+  }
+  
+  .three button {
+    width: 198px;
+   
+  }
+
+  .apoiadores {
+    display: flex;
+    height: 112px;
+    background: #FFF;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .apoiadores div {
+    width: 50%;
+    display: flex; 
+    justify-content: space-around;
+    
+  }
+  
+  .apoiadores h2 {
+    display: none;
+    
+  }
+
+  #h2Mobile{
+    display: block;
+    color: #FD6A9A;
+    font-style: italic;
+    font-size: 26px;
+    text-align: center;
+    padding-top: 1rem;
+  }
+  
+  .apoiadores figure  {
+    display: flex;
+    width: 100%;
+    height: 25px;
+    
+    
+  }
+  .apoiadores figure img{
+    width: 40vw;
+    padding-left: 2rem;
+  }
+
+  footer{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 2rem;
+  }
+
+  .mobile{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mobile figure img{
+    /* width: 200px; */
+    
+    padding-top: 3rem;
+  
+   
+  }
+
+  .footerContacts{
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
+    margin-top: 2rem;
+    justify-content: space-around;
+    width:80%;
+  }
+
+  .footerContacts img{
+    width: 29px;
+  }
+
+  .sectionContainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    padding-top: 5rem;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .sectionContainer ul li{
+    justify-content: center;
+    text-align: center;
+  }
+
+}
+
